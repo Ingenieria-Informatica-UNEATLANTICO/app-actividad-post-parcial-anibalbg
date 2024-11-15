@@ -15,6 +15,8 @@ Indicados dentro del enunciado del examen.
 
 En el repositorio destinado para tal fin en el examen.
 
+## Revisón postparcial
+
 Enlace al pdf del examen: [ParcialEscaneado](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-anibalbg/blob/main/documents/ParcialEscaneado.pdf)
 
 
