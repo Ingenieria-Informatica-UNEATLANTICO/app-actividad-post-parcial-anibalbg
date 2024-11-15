@@ -19,6 +19,7 @@ En el repositorio destinado para tal fin en el examen.
 
 Enlace al pdf del examen: [ParcialEscaneado](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-anibalbg/blob/main/documents/ParcialEscaneado.pdf)
 
+Enlace a los modelos UML del parcial: [ParcialUML]:(https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-anibalbg/tree/main/modelosUML/Parcial)
 
 ### Artefactos
 
