@@ -15,7 +15,7 @@ Indicados dentro del enunciado del examen.
 
 En el repositorio destinado para tal fin en el examen.
 
-Enlace al pdf del examen:
+Enlace al pdf del examen: https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-anibalbg/blob/main/documents/ParcialEscaneado.pdf
 
 ### Artefactos
 
