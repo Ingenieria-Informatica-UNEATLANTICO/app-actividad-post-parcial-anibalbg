@@ -1,0 +1,83 @@
+@startuml
+object LosPerez {
+  id = "1"
+  nombre = "Juan"
+  email = "juan@gmail.com"
+  contraseña = "****"
+}
+
+object Anibal {
+  controlParental = "Desactivado"
+}
+
+object Premium {
+  precio = "9.99"
+  calidad = "4k"
+}
+
+object Recomendacion {
+  id = "123"
+  titulo = "El Hobbit"
+  genero = "Aventura"
+  calificacionPromedio = "****"
+}
+
+object Fury {
+  duracion = "180 min"
+}
+
+
+object AjustesDeVideo {
+  calidad = "1080p"
+  subtitulos = "Español"
+}
+
+object AjustesDePerfil {
+  idioma = "Español"
+  privacidad = "Alta"
+}
+
+object Mario {
+  controlParental = "Activado"
+}
+
+object Recomendacion2 {
+  id = "12335"
+  titulo = "Blanca Nieves"
+  genero = "Dibujos"
+  calificacionPromedio = "***"
+}
+
+object Archer {
+   numeroTemporadas = 5
+   numeroEpisodios = 25
+ }
+
+object ElGolpe {
+  numeroEpisodio = 2
+  duracion = "50 mins"
+}
+
+object AjustesDeVideo2 {
+  calidad = "4k"
+  subtitulos = "Ingles"
+}
+
+object AjustesDePerfil2 {
+  idioma = "Español"
+  privacidad = "Alta"
+}
+
+LosPerez --> Anibal : "crea"
+LosPerez --> Premium : "compra"
+Anibal --> Fury : "elige"
+Anibal --> Recomendacion : "recibe"
+Anibal --> AjustesDePerfil : "tiene"
+Fury --> AjustesDeVideo : "tiene"
+LosPerez --> Mario : "crea"
+Mario --> Recomendacion2 : "recibe"
+Mario --> Archer : "elige"
+Mario --> AjustesDePerfil2 : "ajusta"
+Archer <|-- ElGolpe : "pertenece"
+ElGolpe --> AjustesDeVideo2 : "tiene"
+@enduml

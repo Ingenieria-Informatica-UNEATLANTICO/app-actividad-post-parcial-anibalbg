@@ -1,0 +1,20 @@
+@startuml
+[*] --> NoAutenticado
+
+NoAutenticado --> Autenticado : "login"
+Autenticado --> NoAutenticado : "logout"
+
+Autenticado --> PerfilCreado : "crear perfil"
+PerfilCreado --> AjustesDePerfil : "editar perfil"
+EligiendoContenido --> RecomendandoContenido : "recibe recomendación"
+RecomendandoContenido --> EligiendoContenido : "elige otro contenido"
+EligiendoContenido --> Visualizando : "ver contenido"
+Visualizando --> AjustesDeVideo : "ajustes de video"
+AjustesDeVideo --> Visualizando : "volver a contenido"
+Visualizando --> EligiendoContenido : "no elegir contenido"
+
+PerfilCreado --> SuscripcionActiva : "comprar suscripción"
+SuscripcionActiva --> EligiendoContenido : "disponible contenido"
+
+EligiendoContenido --> [*] : "cerrar sesión"
+@enduml
