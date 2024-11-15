@@ -15,6 +15,8 @@ Indicados dentro del enunciado del examen.
 
 En el repositorio destinado para tal fin en el examen.
 
+Enlace al pdf del examen:
+
 ### Artefactos
 
 A continuación una lista de artefactos que habitualmente constituyen la entrega de un examen:
