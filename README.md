@@ -21,6 +21,8 @@ Enlace al pdf del examen: [ParcialEscaneado](https://github.com/Ingenieria-Infor
 
 Enlace a los modelos UML del parcial: [ParcialUML](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-anibalbg/tree/main/modelosUML/Parcial)
 
+Enlace a los modelos UML del parcial con la siguiente iteración hecha: [Parcial Revisado](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-anibalbg/tree/main/modelosUML/ParcialRevisado)
+
 ### Artefactos
 
 A continuación una lista de artefactos que habitualmente constituyen la entrega de un examen:
