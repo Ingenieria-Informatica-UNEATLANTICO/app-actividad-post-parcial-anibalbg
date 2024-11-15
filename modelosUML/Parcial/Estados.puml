@@ -1,0 +1,15 @@
+@startuml
+    [*] --> Usuario : Crea
+    Usuario --> Suscripcion : Compra
+    Suscripcion -->  Suscrito: Confirma
+    Usuario -->  [*]: No comprar
+
+    state Suscrito {
+          [*] --> Perfil : Elegir
+            Perfil -->  Contenido: Elige
+            Contenido -->  Recomendaciones : Al finalizar
+            Recomendaciones -->  Contenido : Ver
+            Recomendaciones -->  [*] : No ver
+    }
+
+@enduml

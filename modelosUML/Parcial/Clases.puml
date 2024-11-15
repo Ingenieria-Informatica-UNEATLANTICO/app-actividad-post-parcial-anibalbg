@@ -1,0 +1,40 @@
+@startuml
+class Usuario {
+    - correo
+    - contraseña
+}
+
+class Suscripcion {
+    - coste
+    - calidad
+    - nDispositivos
+}
+
+class Perfiles {
+    - tipo
+    - controlParental
+}
+
+class Recomendacion {
+    - nombres
+}
+
+class Contenido {
+    - tipo
+    - episodio
+    - duracion
+}
+
+enum Categoria {
+    Anime
+    Accion
+    Dibujos
+    ...
+}
+
+Usuario --> Suscripcion : "Compra"
+Usuario --> Perfiles : "Crea"
+Perfiles --> Contenido : "Elige"
+Perfiles --> Recomendacion : "Elige"
+Contenido --> Categoria : "Tiene"
+@enduml

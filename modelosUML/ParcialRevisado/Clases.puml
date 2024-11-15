@@ -1,0 +1,56 @@
+@startuml
+class Usuario {
+ - id
+ - nombre
+ - email
+ - contraseña
+ }
+class Perfil {
+ - nombre
+ - controlParental
+}
+class Suscripcion {
+ - precio
+ - calidad
+}
+class Contenido {
+ - titulo
+ - genero
+ - calificaciónPromedio
+}
+class Recomendacion {
+ - id
+ - genero
+ - calificaciónPromedio
+}
+class Pelicula {
+ - duracion
+}
+class Serie {
+ - numeroTemporadas
+ - numeroEpisodio
+}
+class Episodio {
+ - numeroEpisodio
+ - titulo
+ - duracion
+}
+class AjustesDeVideo {
+- calidad
+- subtitulos
+}
+class AjustesDePerfil {
+ - idioma
+  - privacidad
+}
+Usuario --> Perfil : "crea"
+Usuario --> Suscripcion : "compra"
+Perfil --> Contenido : "elige "
+Perfil --> Recomendacion : "recibe"
+Recomendacion --> Contenido : "recomienda"
+Contenido <|-- Pelicula
+Contenido <|-- Serie
+Serie --> Episodio : "contiene"
+Perfil --> AjustesDePerfil : "tiene"
+Contenido--> AjustesDeVideo : "tiene"
+@enduml
