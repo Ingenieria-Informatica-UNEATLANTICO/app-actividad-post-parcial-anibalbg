@@ -1,0 +1,75 @@
+@startuml
+object FamiliaPerez {
+    correo = "Perez@gmail.com"
+    contraseña = "12345"
+}
+
+object Premium {
+    coste = 10
+    calidad = "4k"
+    nDispositivos = 4
+}
+
+object Básico {
+    coste = 5
+    calidad = "HD"
+    nDispositivos = 1
+}
+
+object Anibal {
+    tipo = "Adulto"
+    controlParental = false
+}
+
+object Daniel {
+    tipo = "Niños"
+    controlParental = true
+}
+
+object recomendacion1 {
+    nombres = "Archer"
+    tipo = "Serie"
+}
+
+object recomendacion2 {
+    nombres = "Fury"
+    tipo = "Película"
+}
+
+object recomendacion3 {
+    nombres = "Frozen"
+    tipo = "Película"
+}
+
+object PeakyBlinders {
+    tipo = "Serie"
+    episodio = 220
+    duracion = 25
+}
+
+object BobEsponja {
+    tipo = "Película"
+    episodio = 1
+    duracion = 90
+}
+
+enum Accion {
+
+}
+
+enum Animacion {
+
+}
+
+FamiliaPerez --> Premium
+Daniel --> Básico
+FamiliaPerez --> Anibal
+FamiliaPerez --> Daniel
+Anibal --> PeakyBlinders
+Daniel --> BobEsponja
+Anibal --> recomendacion1
+Anibal --> recomendacion2
+Daniel --> recomendacion3
+PeakyBlinders --> Accion
+BobEsponja --> Animacion
+@enduml
